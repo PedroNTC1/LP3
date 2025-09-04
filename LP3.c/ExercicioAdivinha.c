@@ -5,6 +5,7 @@
 
 int main (){
     int x, n, count=0;
+    int baixo= 1, alto= 100, palpite, count2;
     srand(time(NULL));
     n = (rand()% 100) + 1;
     
@@ -31,5 +32,24 @@ int main (){
         }
 
     }
+    printf("----------------------------\n");
+    printf("AGORA VOU ADIVINHAR O SEU NUMERO\n");
+    printf("DIGITE UM NUMERO PARA EU ADIVINHAR: \n");
+    scanf("%d", &y);
+
+    while (m != y)
+    {
+        metade = m/2;
+        m = metade;
+        if (m == y){
+            printf("acertou");
+            return 0;
+        }
+        else if(m < y){
+            pritn
+        }
+    }
+    
+
     return 0;
 }
